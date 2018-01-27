@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 212517736648537616}
   - component: {fileID: 61601758052352870}
   - component: {fileID: 50625701705472136}
-  - component: {fileID: 114203665845033444}
   m_Layer: 0
   m_Name: scaffolding
   m_TagString: plateform
@@ -88,18 +87,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.28, y: 0.52}
   m_EdgeRadius: 0
---- !u!114 &114203665845033444
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1214517608214918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b613f553f1a0e064da686bf35efd4ad6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_timeToInitialiseRotation: 1
 --- !u!212 &212517736648537616
 SpriteRenderer:
   m_ObjectHideFlags: 1

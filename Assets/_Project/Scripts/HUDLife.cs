@@ -30,10 +30,15 @@ public class HUDLife : MonoBehaviour {
             Debug.Log("Player n'a plus de vie");
     }
 
-
-    private void Awake()
+    public static void AddKill(GameObject _panelPlayer, GameObject _prefabsSprite, int _maxKill = 3)
     {
-        CreateLife();
+        _panelPlayer.GetComponent<GridLayoutGroup>().constraintCount = _maxKill;
+        Instantiate(_prefabsSprite, _panelPlayer.transform);
+    }
+
+
+    private void Update()
+    {
     }
 
 
@@ -46,7 +51,9 @@ public class HUDLife : MonoBehaviour {
             for(int life = 0; life < m_numberLife; life++)
             {
                 GameObject heart = Instantiate(m_prefabsSpriteLife, panel.transform);
-                heart.GetComponent<RawImage>().color = m_colorLifePlayer[color];
+
+                if (m_colorLifePlayer.Length > 0)
+                    heart.GetComponent<RawImage>().color = m_colorLifePlayer[color];
             }
             color++;
         }

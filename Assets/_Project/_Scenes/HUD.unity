@@ -220,12 +220,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d177832ae4a4243b709ee4ac42b098, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_prefabsSpriteLife: {fileID: 1947461531020646, guid: 0b33a37683424c74f941b8c44bbf3f58,
+  m_prefabsSpriteLife: {fileID: 1666084185161658, guid: 898d9f63825c2f0419fcce5847efb285,
     type: 2}
   m_numberLife: 3
-  m_colorLifePlayer:
-  - {r: 0, g: 1, b: 0.13103461, a: 1}
-  - {r: 1, g: 0, b: 0.76551723, a: 1}
+  m_colorLifePlayer: []
   m_panelsLifes:
   - {fileID: 1776745858}
   - {fileID: 1842160751}
@@ -346,7 +344,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 20, y: 20}
+  m_CellSize: {x: 30, y: 30}
   m_Spacing: {x: 10, y: 10}
   m_Constraint: 1
   m_ConstraintCount: 2
@@ -438,7 +436,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 20, y: 20}
+  m_CellSize: {x: 30, y: 30}
   m_Spacing: {x: 10, y: 10}
   m_Constraint: 1
   m_ConstraintCount: 2

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HUDLife : MonoBehaviour {
 
-    public GameObject m_prefabsSpriteLife;
+    public GameObject m_prefabsSprite;
 
     public int m_numberLife = 3;
     public Color[] m_colorLifePlayer = new Color[2];
@@ -50,7 +50,7 @@ public class HUDLife : MonoBehaviour {
             panel.GetComponent<GridLayoutGroup>().constraintCount = m_numberLife;
             for(int life = 0; life < m_numberLife; life++)
             {
-                GameObject heart = Instantiate(m_prefabsSpriteLife, panel.transform);
+                GameObject heart = Instantiate(m_prefabsSprite, panel.transform);
 
                 if (m_colorLifePlayer.Length > 0)
                     heart.GetComponent<RawImage>().color = m_colorLifePlayer[color];

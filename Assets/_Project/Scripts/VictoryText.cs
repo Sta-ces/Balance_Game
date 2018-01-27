@@ -1,19 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class VictoryText : MonoBehaviour {
 
-	public void VictoryTextSetActive()
+    public GameObject m_Victory;
+    public Text m_VictoryText;
+
+	public void VictoryTextSetActive(string _winnerName)
     {
-        Debug.Log(gameObject.activeSelf);
-        gameObject.SetActive(!gameObject.activeSelf);
+        m_VictoryText.text = _winnerName + "\nWIN!";
+        m_Victory.SetActive(!m_Victory.activeSelf);
     }
 
 
-    private void Update()
+    private void Awake()
     {
-        /*if(Input.GetButtonDown("Jump"))
-        VictoryTextSetActive();*/
+        m_Victory.SetActive(false);
     }
 }

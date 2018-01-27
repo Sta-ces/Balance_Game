@@ -13,7 +13,7 @@ public class VictoryText : MonoBehaviour {
 
     private void Update()
     {
-        if(Input.GetButtonDown("Jump"))
-        VictoryTextSetActive();
+        /*if(Input.GetButtonDown("Jump"))
+        VictoryTextSetActive();*/
     }
 }
